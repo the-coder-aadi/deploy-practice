@@ -19,7 +19,7 @@ try {
 
    res.cookie("Refresh_Token", newrefreshtoken,{
         httpOnly:true,
-        sameSite:"strict",
+        sameSite:"none",
         secure:true,
         maxAge: 3 * 24 * 60 * 60 * 1000
       })

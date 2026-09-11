@@ -21,7 +21,7 @@ import authrouter from "./Routes/oauth.js"
 const server = express()
 server.use(express.json())
 server.use(cors({
-    origin:"http://localhost:5173",
+    origin:"https://deploy-practice-1-68qf.onrender.com",
     credentials:true
 }))
 server.use(cookieParser())
