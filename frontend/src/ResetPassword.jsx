@@ -11,7 +11,7 @@ function ResetPassword() {
   
 
     const response = await fetch(
-      `http://localhost:9000/reset-password/${token}`,
+      `https://deploy-practice-l2gs.onrender.com/reset-password/${token}`,
       {
         method: "POST",
         headers: {

@@ -23,7 +23,7 @@ const navigate = useNavigate()
     // }
 
     try {
-      const response = await fetch("http://localhost:9000/register", {
+      const response = await fetch("https://deploy-practice-l2gs.onrender.com/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

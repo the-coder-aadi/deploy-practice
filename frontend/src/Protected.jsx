@@ -17,7 +17,7 @@ async function accesstokenverification() {
         return refreshtokenverifictaion()
     }
 
-    const api = await fetch("http://localhost:9000/accesstokenverification",{
+    const api = await fetch("https://deploy-practice-l2gs.onrender.com/accesstokenverification",{
         method:"POST",
         headers:{
             "Content-Type" : "application/json",
@@ -51,7 +51,7 @@ async function refreshtokenverifictaion() {
     console.log("refresh token verification request...");
     
     try {
-        const api = await fetch("http://localhost:9000/refreshtokenverifictaion",{
+        const api = await fetch("https://deploy-practice-l2gs.onrender.com/refreshtokenverifictaion",{
             method:"POST",
             credentials:"include"
         })
