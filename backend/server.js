@@ -36,7 +36,8 @@ server.use("/", refreshtokencheck)
 server.use("/", Forgotpassrouter)
 server.use("/", Resetpassrouter)
 
-server.listen(9000, ()=>{
-    console.log("server listening on 9000 port");
-    
-})
+const PORT = process.env.PORT || 9000;
+
+server.listen(PORT, "0.0.0.0", () => {
+  console.log(`server listening on ${PORT} port`);
+});
